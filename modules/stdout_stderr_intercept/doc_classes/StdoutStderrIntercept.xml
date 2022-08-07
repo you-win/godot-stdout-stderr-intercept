@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="StdoutStderrIntercept" inherits="Object" version="3.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../doc/class.xsd">
+	<brief_description>
+		Class for intercepting stdout and stderr.
+	</brief_description>
+	<description>
+		Class for intercepting stdout and stderr. The usual `print` and `printerr` commands will be caught by this class.
+	</description>
+	<tutorials>
+	</tutorials>
+	<methods>
+	</methods>
+	<signals>
+		<signal name="intercepted_message">
+			<argument index="0" name="text" type="String" />
+			<argument index="1" name="is_error" type="bool" />
+			<description>
+				Emitted when a message is sent to stdout or stderr.
+			</description>
+		</signal>
+	</signals>
+	<members>
+	</members>
+	<constants>
+	</constants>
+</class>
